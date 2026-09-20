@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuralix — Voice Form Filling</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">∞</span>
+            <div>
+                <h1>Kuralix</h1>
+                <p>Voice-Based Form Filling for Indian Regional Languages</p>
+            </div>
+        </div>
+        <div class="status" id="status">🟢 Online</div>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>1. Select Language</h2>
+            <div class="lang-grid">
+                <button class="lang-btn active" data-lang="hi">हिन्दी</button>
+                <button class="lang-btn" data-lang="mr">मराठी</button>
+                <button class="lang-btn" data-lang="ta">தமிழ்</button>
+                <button class="lang-btn" data-lang="te">తెలుగు</button>
+                <button class="lang-btn" data-lang="en">English</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>2. Speak Your Details</h2>
+            <p class="hint">Try: "Mera naam Sunita Patil hai, umar 32, gaon Wadgaon, mujhe bukhar aur khansi hai"</p>
+            <div class="mic-container">
+                <button id="recordBtn" class="mic-btn">🎤</button>
+                <p id="recordStatus">Tap to start recording</p>
+            </div>
+            <div class="alt-upload">
+                <label for="audioFile">Or upload audio:</label>
+                <input type="file" id="audioFile" accept="audio/*">
+                <button id="uploadBtn" class="btn-secondary">Process File</button>
+            </div>
+        </section>
+
+        <section class="card" id="formSection" style="display:none;">
+            <h2>3. Review Auto-Filled Form</h2>
+            <div class="confidence-bar">
+                <div class="confidence-fill" id="confidenceFill"></div>
+            </div>
+            <p id="confidenceText">Overall Confidence: --</p>
+            <form id="kuralixForm"><div id="formFields"></div></form>
+            <div class="actions">
+                <button id="submitBtn" class="btn-primary">✅ Submit Form</button>
+                <button id="resetBtn" class="btn-secondary">🔄 Start Over</button>
+            </div>
+        </section>
+
+        <section class="card" id="debugSection" style="display:none;">
+            <h2>🔍 Debug Info</h2>
+            <pre id="debugOutput"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kuralix • ARAIVA Team • Dayananda Sagar University • 2026</p>
+    </footer>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
