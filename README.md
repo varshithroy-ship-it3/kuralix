@@ -73,24 +73,3 @@ Team
 ARAIVA — P. Chaitra, M. Varshith
 Dayananda Sagar University — 2026
 
-text
-
-**Scroll down**, click **Commit changes...**, then **Commit changes** again to confirm.
-
-## Final step — verify README appears
-
-Refresh the GitHub page. You should see the formatted README rendered below the file list.
-
----
-
-## ✅ What's done
-
-| Item | Status |
-|---|---|
-| Code working locally | ✅ |
-| All 5 languages extract correctly | ✅ |
-| GitHub repo created | ✅ |
-| Initial commit pushed | ✅ |
-| README | ⏳ paste now |
-
-Once README is committed, you're **100% done with the repo side**. Then we move to the **PPT + demo prep** — that's what's left for the hackathon round.
